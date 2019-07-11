@@ -12,7 +12,6 @@ let server;
 
 beforeAll(function (done) {
   server = app.listen(4000, () => {
-    global.agent = request.agent(server);
     done();
   });
 
