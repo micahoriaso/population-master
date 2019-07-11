@@ -1,9 +1,8 @@
 import mongoose from 'mongoose';
-import checkAPIs from 'express-validator';
+import {check} from 'express-validator';
 import {isLocationExisting} from '../helpers/validators'
 
 const Schema = mongoose.Schema;
-const {check} = checkAPIs;
 
 export const validations =
 {
