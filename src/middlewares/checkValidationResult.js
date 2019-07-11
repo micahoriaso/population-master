@@ -1,8 +1,8 @@
-import checkAPIs from 'express-validator';
+import {validationResult} from 'express-validator';
 
 export function checkValidationResult(req, res, next)
 {
-  const errors = checkAPIs.validationResult(req);
+  const errors = validationResult(req);
 
   if (!errors.isEmpty()) {
 
