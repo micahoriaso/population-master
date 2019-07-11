@@ -2,12 +2,12 @@ swagger: '2.0'
 info:
   title: Population Master API Specification
   description: >-
-    The official API documentation for population-master. You will need to have a running instance of the [population-master](https://github.com/micahoriaso/population-master) to test these API endpoints on your local environment. For this sample, you can use **email**:`jared@gmail.com` and **password**: `123456789` to login. When adding auth header, click on the authorize button then add the authentication header in this format `Bearer JWT-token`
+    The official API documentation for population-master. You will need to have a running instance of the [population-master](https://github.com/micahoriaso/population-master) to test these API endpoints on your local environment. For this sample, you can use **email**:`brock@gmail.com` and **password**: `123456789` to login. When adding auth header, click on the authorize button then add the authentication header in this format `Bearer JWT-token`
   version: 1.0.0
 basePath: /
 schemes:
-  - http
   - https
+  - http
 securityDefinitions:
   Bearer:
     type: apiKey
@@ -115,9 +115,6 @@ paths:
               female:
                 type: number
                 example: 320
-              parentId:
-                type: string
-                example: '5d270be1fc009b80a4c8c4b5'
       responses:
         '201':
           description: CREATED
